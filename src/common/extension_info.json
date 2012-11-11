@@ -1,0 +1,16 @@
+{
+  "content_scripts": ["html2haml.js"],
+  "description": "Convert selected HTML to HAML",
+  "creator": "Artem Komarov (ualinker)",
+  "background_scripts": [
+    "main.js"
+  ],
+  "homepage_url": "https://github.com/ualinker/html2haml-ext",
+  "version": "1.0",
+  "browser_button": {
+    "caption": "HTML2HAML",
+    "icon": "icons/button.png",
+    "tooltipText": "Convert selected HTML to HAML"
+  },
+  "name": "HTML2HAML"
+}
