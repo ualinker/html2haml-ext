@@ -6,7 +6,7 @@
     "main.js"
   ],
   "homepage_url": "https://github.com/ualinker/html2haml-ext",
-  "version": "1.0",
+  "version": "1.0.1",
   "browser_button": {
     "caption": "HTML2HAML",
     "icon": "icons/button.png",

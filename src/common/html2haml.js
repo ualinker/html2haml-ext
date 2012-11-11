@@ -34,14 +34,14 @@ function HTML2HAML()
                 haml = '%' + node.nodeName.toLowerCase();
             }
 
-            haml += node.className ? '.' + node.className.replace(' ', '.') : '';
+            haml += node.className ? '.' + node.className.replace(/ /g, '.') : '';
             haml += node.id ? '#' + node.id : '';
             var attrs = [];
 
             for (var i = 0; i < node.attributes.length; i++) {
                 var attr = node.attributes[i];
 
-                if (attr.nodeName != 'class') {
+                if (attr.nodeName != 'class' && attr.nodeName != 'id') {
                     attrs.push(attr.nodeName + '="' + attr.nodeValue + '"');
                 }
             }
